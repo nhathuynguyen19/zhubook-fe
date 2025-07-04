@@ -1,0 +1,14 @@
+{
+  "id": "1",
+  "slug": "getting-started-with-web-development",
+  "title": "Getting Started with Web Development",
+  "excerpt": "Learn the basics of HTML, CSS, and JavaScript to kickstart your web development journey.",
+  "date": "2025-05-01",
+  "readTime": "5 min read",
+  "content": "<p>Web development is an exciting field that combines creativity with technical skills. In this post, I'll share some tips for beginners who are just starting their journey.</p><h2>The Basics: HTML, CSS, and JavaScript</h2><p>Every web developer should start by mastering these three core technologies:</p><ul><li><strong>HTML</strong> - The structure of web pages</li><li><strong>CSS</strong> - The styling and layout</li><li><strong>JavaScript</strong> - The interactive functionality</li></ul><p>Once you have a good grasp of these fundamentals, you can move on to frameworks and libraries that make development more efficient.</p><h2>Choosing Your Path</h2><p>Web development has many specializations:</p><ul><li><strong>Frontend Development</strong> - Creating the user interface and experience</li><li><strong>Backend Development</strong> - Building server-side logic and databases</li><li><strong>Full Stack Development</strong> - Working on both frontend and backend</li></ul><p>Each path has its own set of tools and technologies to learn. The key is to start with the basics and gradually expand your knowledge.</p><h2>Practice Makes Perfect</h2><p>The best way to learn web development is by building projects. Start small and gradually take on more complex challenges. Don't be afraid to make mistakes - they're an essential part of the learning process.</p><p>Remember, web development is a journey, not a destination. The field is constantly evolving, so continuous learning is crucial for success.</p>",
+  "author": {
+    "name": "John Doe",
+    "image": "/placeholder.svg?height=40&width=40",
+    "bio": "Web Developer & Technical Writer"
+  }
+}

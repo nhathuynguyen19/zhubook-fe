@@ -1,0 +1,70 @@
+{
+  "id": "5",
+  "slug": "introduction-to-react-hooks",
+  "title": "Introduction to React Hooks",
+  "excerpt": "Learn how to use React Hooks to simplify your functional components.",
+  "date": "2025-04-05",
+  "readTime": "6 min read",
+  "content": "<p>React Hooks revolutionized the way we write React components by allowing us to use state and other React features without writing classes. This post introduces the core Hooks and how to use them effectively.</p><h2>useState: Managing Component State</h2><p>The <code>useState</code> Hook lets you add state to functional components:</p><pre><code>import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+} </button>
+    </div>
+  );
+}</code></pre><h2>useEffect: Performing Side Effects</h2><p>The <code>useEffect</code> Hook lets you perform side effects in function components, similar to lifecycle methods in class components:</p><pre><code>import React, { useState, useEffect } from 'react';
+
+function DocumentTitleUpdater() {
+  const [count, setCount] = useState(0);
+  
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  }, [count]); // Only re-run if count changes
+  
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Click me
+    </button>
+  );
+}</code></pre><h2>useContext: Consuming Context</h2><p>The <code>useContext</code> Hook provides a more concise way to consume React context:</p><pre><code>import React, { useContext } from 'react';
+import { ThemeContext } from './theme-context';
+
+function ThemedButton() {
+  const theme = useContext(ThemeContext);
+  
+  return (
+    <button style={{ background: theme.background, color: theme.foreground }}>
+      Styled by theme context!
+    </button>
+  );
+}</code></pre><h2>useRef: Accessing DOM Elements</h2><p>The <code>useRef</code> Hook creates a mutable reference object:</p><pre><code>import React, { useRef } from 'react';
+
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+  
+  const onButtonClick = () => {
+    inputEl.current.focus();
+  };
+  
+  return (
+    <>
+      <input ref={inputEl} type=\"text\" />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}</code></pre><p>React Hooks enable more concise, readable component code while encouraging better patterns for state management and side effects. They're a powerful addition to your React toolkit.</p>",
+  "author": {
+    "name": "John Doe",
+    "image": "/placeholder.svg?height=40&width=40",
+    "bio": "Web Developer & Technical Writer"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "4",
+  "slug": "responsive-design-best-practices",
+  "title": "Responsive Design Best Practices",
+  "excerpt": "Tips and techniques for creating websites that look great on all devices.",
+  "date": "2025-04-10",
+  "readTime": "7 min read",
+  "content": "<p>In today's multi-device world, responsive design is no longer optional—it's essential. This post covers key best practices for creating responsive websites that deliver a great user experience across all screen sizes.</p><h2>Mobile-First Approach</h2><p>Start by designing for the smallest screen first, then progressively enhance the experience for larger screens. This approach forces you to focus on the essential content and functionality.</p><h2>Fluid Grids and Flexible Images</h2><p>Use relative units like percentages for layout elements instead of fixed pixels. Images should also adapt to their containers:</p><pre><code>img { max-width: 100%; height: auto; }</code></pre><h2>Media Queries</h2><p>Use CSS media queries to apply different styles based on device characteristics, particularly screen width:</p><pre><code>@media (min-width: 768px) { /* Tablet styles */ }
+@media (min-width: 1024px) { /* Desktop styles */ }</code></pre><h2>Touch-Friendly Interactions</h2><p>Design with touch in mind, using appropriately sized tap targets (at least 44×44 pixels) and considerder touch gestures for interactive elements.</p><h2>Performance Considerations</h2><p>Mobile users often have bandwidth limitations. Optimize images, minimize HTTP requests, and leverage browser caching to ensure fast load times across all devices.</p><h2>Testing Across Devices</h2><p>Always test your designs on actual devices, not just browser emulators. Pay attention to how different operating systems and browsers render your site.</p><p>By following these best practices, you'll create websites that not only look great on any device but also provide an optimal user experience regardless of how visitors access your content.</p>",
+  "author": {
+    "name": "John Doe",
+    "image": "/placeholder.svg?height=40&width=40",
+    "bio": "Web Developer & Technical Writer"
+  }
+}
